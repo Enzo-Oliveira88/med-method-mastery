@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Instagram, Linkedin } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -113,7 +113,7 @@ const ContactSection = () => {
                     <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-crimson text-base text-offWhite/80">
-                        contato@med.com.br
+                        annafontes29@gmail.com
                       </p>
                     </div>
                   </div>
@@ -124,22 +124,13 @@ const ContactSection = () => {
                     </p>
                     <div className="flex gap-4">
                       <a 
-                        href="#" 
+                        href="https://www.instagram.com/annafontesm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-offWhite/10 flex items-center justify-center hover:bg-burgundy transition-colors duration-300 text-offWhite"
                         aria-label="Instagram"
                       >
                         <Instagram className="w-5 h-5" />
-                      </a>
-                      <a 
-                        href="#" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-offWhite/10 flex items-center justify-center hover:bg-burgundy transition-colors duration-300 text-offWhite"
-                        aria-label="LinkedIn"
-                      >
-                        <Linkedin className="w-5 h-5" />
                       </a>
                     </div>
                   </div>
