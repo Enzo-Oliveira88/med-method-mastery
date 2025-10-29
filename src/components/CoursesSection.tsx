@@ -9,21 +9,21 @@ const courses = [
     title: "MÉTODO DE EXCELÊNCIA — BASE MÉDICA",
     description: "Aprenda a dominar os fundamentos da medicina com propósito e clareza. Um curso que une técnica, rotina e mentalidade científica para estudantes que desejam alcançar a excelência desde os primeiros períodos.",
     price: "R$ 397,00",
-    link: "#" // Substitua pelo link da Kiwify
+    link: "https://pay.kiwify.com.br/RTduVKJ" // Substitua pelo link da Kiwify
   },
   {
     image: courseAdvanced,
     title: "PERFORMANCE MÉDICA AVANÇADA",
     description: "Curso voltado para alunos em fase clínica que buscam constância e foco. Estratégias práticas de estudo, gestão emocional e tomada de decisão baseadas em evidências.",
-    price: "R$ 697,00",
-    link: "#" // Substitua pelo link da Kiwify
+    price: "R$ 490,00",
+    link: "https://pay.kiwify.com.br/Xoj6gqT" // Substitua pelo link da Kiwify
   },
   {
     image: courseMentorship,
     title: "MENTORIA MÉDICA — PROPÓSITO E CARREIRA",
     description: "Um programa de mentoria para quem quer alinhar vocação, propósito e alta performance. Ideal para estudantes e residentes que desejam construir uma carreira sólida e inspiradora.",
-    price: "R$ 997,00",
-    link: "#" // Substitua pelo link da Kiwify
+    price: "R$ 970,00",
+    link: "https://pay.kiwify.com.br/24q5cyM" // Substitua pelo link da Kiwify
   }
 ];
 
