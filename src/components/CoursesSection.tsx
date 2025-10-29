@@ -8,7 +8,7 @@ const courses = [
     image: courseBase,
     title: "MÉTODO DE EXCELÊNCIA — BASE MÉDICA",
     description: "Aprenda a dominar os fundamentos da medicina com propósito e clareza. Um curso que une técnica, rotina e mentalidade científica para estudantes que desejam alcançar a excelência desde os primeiros períodos.",
-    price: "R$ 497,00",
+    price: "R$ 397,00",
     link: "#" // Substitua pelo link da Kiwify
   },
   {
