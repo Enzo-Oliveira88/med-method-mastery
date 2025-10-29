@@ -124,7 +124,7 @@ const ContactSection = () => {
                     </p>
                     <div className="flex gap-4">
                       <a 
-                        href="https://www.instagram.com/annafontesm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                        href="https://www.instagram.com/annafontesm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-offWhite/10 flex items-center justify-center hover:bg-burgundy transition-colors duration-300 text-offWhite"
