@@ -52,6 +52,7 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         burgundy: "hsl(var(--burgundy))",
+        burgundyDark: "hsl(var(--burgundy-dark))",
         darkBrown: "hsl(var(--dark-brown))",
         darkerBrown: "hsl(var(--darker-brown))",
         offWhite: "hsl(var(--off-white))",
