@@ -15,12 +15,12 @@ const FooterSection = () => {
             MED
           </h3>
           <p className="font-crimson text-sm text-offWhite/70 mb-6">
-            teste
+            Método de Excelência e Desempenho
           </p>
           
           <div className="border-t border-offWhite/20 pt-6 w-full max-w-2xl">
             <p className="font-crimson text-sm text-offWhite/60">
-              © {new Date().getFullYear()} MED. Todos os direitos reservados.
+              © {new Date().getFullYear()} MED. Todos os direitos reservados 2025.
             </p>
           </div>
         </div>
