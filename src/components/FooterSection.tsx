@@ -15,7 +15,7 @@ const FooterSection = () => {
             MED
           </h3>
           <p className="font-crimson text-sm text-offWhite/70 mb-6">
-            Método de Excelência e Desempenho
+            teste
           </p>
           
           <div className="border-t border-offWhite/20 pt-6 w-full max-w-2xl">
