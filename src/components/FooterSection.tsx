@@ -1,20 +1,14 @@
 import medEmblem from "@/assets/med-emblem-new.jpg";
-
 const FooterSection = () => {
-  return (
-    <footer className="bg-darkerBrown border-t border-offWhite/10 py-12">
+  return <footer className="bg-darkerBrown border-t border-offWhite/10 py-12">
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
-          <img 
-            src={medEmblem} 
-            alt="MED Emblem" 
-            className="w-20 h-20 mb-6 opacity-80"
-          />
           
-          <h3 className="font-playfair text-2xl font-bold text-offWhite mb-2">
+          
+          <h3 className="font-playfair font-bold text-offWhite mb-2 text-7xl">
             MED
           </h3>
-          <p className="font-crimson text-sm text-offWhite/70 mb-6">
+          <p className="font-crimson text-sm text-offWhite/70 mb-6 font-thin">
             Método de Excelência e Desempenho
           </p>
           
@@ -25,8 +19,6 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default FooterSection;
