@@ -1,4 +1,4 @@
-import medEmblem from "@/assets/med-emblem.png";
+import medEmblem from "@/assets/med-emblem-new.jpg";
 
 const FooterSection = () => {
   return (
