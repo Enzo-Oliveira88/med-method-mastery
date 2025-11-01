@@ -4,24 +4,28 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const testimonials = [
   {
     name: "Maria Silva",
+    initials: "MS",
     course: "Método de Excelência — Base Médica",
     text: "O curso transformou minha forma de estudar. Consegui organizar minha rotina e meus resultados melhoraram muito. Recomendo para todos que querem começar com o pé direito na medicina!",
     rating: 5
   },
   {
     name: "João Pedro",
+    initials: "JP",
     course: "Performance Médica Avançada",
     text: "Estava perdido na fase clínica, mas esse curso me deu clareza e método. As estratégias práticas de estudo fizeram toda a diferença. Vale cada centavo!",
     rating: 5
   },
   {
     name: "Ana Beatriz",
+    initials: "AB",
     course: "Mentoria Médica — Propósito e Carreira",
     text: "A mentoria me ajudou a encontrar meu propósito e a construir uma visão clara da minha carreira. Mais do que técnicas, aprendi a ter uma mentalidade de excelência.",
     rating: 5
   },
   {
     name: "Carlos Eduardo",
+    initials: "CE",
     course: "Método de Excelência — Base Médica",
     text: "Nunca imaginei que estudar medicina poderia ser tão organizado e eficiente. O método é completo e muito bem estruturado. Indico para qualquer estudante!",
     rating: 5
@@ -57,10 +61,17 @@ const TestimonialsSection = () => {
                 className="scroll-reveal glass-effect rounded-lg p-6 border border-offWhite/10 hover:border-accent/40 transition-all duration-500 hover-lift group"
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-accent text-accent group-hover:scale-110 transition-transform duration-300" style={{ transitionDelay: `${i * 50}ms` }} />
-                  ))}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <span className="font-playfair text-lg font-bold text-offWhite">
+                      {testimonial.initials}
+                    </span>
+                  </div>
+                  <div className="flex gap-1">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-accent text-accent group-hover:scale-110 transition-transform duration-300" style={{ transitionDelay: `${i * 50}ms` }} />
+                    ))}
+                  </div>
                 </div>
                 
                 <p className="font-crimson text-base text-offWhite/90 mb-4 italic leading-relaxed">

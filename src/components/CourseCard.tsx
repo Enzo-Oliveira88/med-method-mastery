@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Clock } from "lucide-react";
 
 interface CourseCardProps {
   image: string;
   title: string;
   description: string;
+  duration: string;
   price: string;
   link: string;
 }
 
-const CourseCard = ({ image, title, description, price, link }: CourseCardProps) => {
+const CourseCard = ({ image, title, description, duration, price, link }: CourseCardProps) => {
   return (
     <div className="bg-card rounded-lg overflow-hidden shadow-md hover-lift group border border-border/50">
       <div className="relative h-64 overflow-hidden">
@@ -35,6 +36,11 @@ const CourseCard = ({ image, title, description, price, link }: CourseCardProps)
         <p className="font-crimson text-sm text-card-foreground/70 mb-4 leading-relaxed line-clamp-3">
           {description}
         </p>
+        
+        <div className="flex items-center gap-2 text-card-foreground/60 mb-4">
+          <Clock className="w-4 h-4" />
+          <span className="font-crimson text-sm">{duration}</span>
+        </div>
         
         <div className="border-t border-border pt-4 mt-4">
           <div className="flex items-center justify-between mb-4">

@@ -1,4 +1,4 @@
-import { Award, Heart, TrendingUp, Users, BookOpen } from "lucide-react";
+import { Award, Heart, TrendingUp, Users, BookOpen, Sparkles } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const values = [
@@ -16,6 +16,11 @@ const values = [
     icon: TrendingUp,
     title: "Constância",
     description: "Resultados nascem da disciplina e da rotina diária."
+  },
+  {
+    icon: Sparkles,
+    title: "Inovação",
+    description: "Aplicamos métodos modernos que fazem a diferença no aprendizado."
   },
   {
     icon: Heart,
@@ -56,7 +61,7 @@ const AboutSection = () => {
           <h3 ref={valuesRef} className="font-playfair text-3xl sm:text-4xl font-bold text-primary text-center mb-12 scroll-reveal">
             Nossos Valores
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {values.map((value, index) => (
               <div 
                 key={value.title}
