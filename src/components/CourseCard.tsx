@@ -1,35 +1,28 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Clock } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 interface CourseCardProps {
   image: string;
   title: string;
   description: string;
-  duration: string;
   price: string;
   link: string;
 }
 
-const CourseCard = ({ image, title, description, duration, price, link }: CourseCardProps) => {
+const CourseCard = ({ image, title, description, price, link }: CourseCardProps) => {
   return (
-    <div className="bg-card rounded-lg overflow-hidden shadow-md hover-lift group border border-border/50">
+    <div className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
       <div className="relative h-64 overflow-hidden">
         <img 
           src={image} 
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-darkerBrown/90 via-darkerBrown/50 to-transparent group-hover:from-burgundy/90 group-hover:via-burgundy/50 transition-all duration-500" />
-        
-        {/* Glowing Border Effect on Hover */}
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-accent/20 to-primary/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-darkerBrown/80 to-transparent" />
       </div>
       
-      <div className="p-6 relative">
-        {/* Decorative Element */}
-        <div className="absolute top-0 left-6 w-12 h-1 bg-gradient-to-r from-accent to-primary transform -translate-y-1/2" />
-        
-        <h3 className="font-playfair text-xl font-bold text-card-foreground mb-3 leading-tight min-h-[3.5rem] group-hover:gradient-text transition-all duration-300">
+      <div className="p-6">
+        <h3 className="font-playfair text-xl font-bold text-card-foreground mb-3 leading-tight min-h-[3.5rem]">
           {title}
         </h3>
         
@@ -37,21 +30,16 @@ const CourseCard = ({ image, title, description, duration, price, link }: Course
           {description}
         </p>
         
-        <div className="flex items-center gap-2 text-card-foreground/60 mb-4">
-          <Clock className="w-4 h-4" />
-          <span className="font-crimson text-sm">{duration}</span>
-        </div>
-        
         <div className="border-t border-border pt-4 mt-4">
           <div className="flex items-center justify-between mb-4">
-            <span className="font-playfair text-2xl font-bold text-burgundy group-hover:text-primary transition-colors duration-300">
+            <span className="font-playfair text-2xl font-bold text-burgundy">
               {price}
             </span>
           </div>
           
           <Button 
             asChild
-            className="w-full bg-burgundy hover:bg-primary text-primary-foreground font-crimson text-base py-6 shadow-md hover:shadow-xl transition-all duration-500 group-hover:animate-glow"
+            className="w-full bg-burgundy hover:bg-burgundy/90 text-primary-foreground font-crimson text-base py-6 shadow-md hover:shadow-lg transition-all duration-300"
           >
             <a 
               href={link}
@@ -60,7 +48,7 @@ const CourseCard = ({ image, title, description, duration, price, link }: Course
               className="flex items-center justify-center gap-2"
             >
               Quero me inscrever
-              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              <ExternalLink className="w-4 h-4" />
             </a>
           </Button>
         </div>
