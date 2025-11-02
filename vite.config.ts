@@ -10,6 +10,7 @@ export default defineConfig({
   base: '/med-method-mastery/',
   plugins: [react()],
 })
+npm run build
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
