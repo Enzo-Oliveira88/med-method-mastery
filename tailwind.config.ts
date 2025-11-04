@@ -136,6 +136,16 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-5px)" },
         },
+        "gradient-shift": {
+          "0%, 100%": { 
+            backgroundPosition: "0% 50%",
+            backgroundSize: "200% 200%"
+          },
+          "50%": { 
+            backgroundPosition: "100% 50%",
+            backgroundSize: "200% 200%"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -156,6 +166,7 @@ export default {
         "typing": "typing 2s steps(30) forwards",
         "blink": "blink 1s step-end infinite",
         "bounce-subtle": "bounce-subtle 2s ease-in-out infinite",
+        "gradient-shift": "gradient-shift 8s ease infinite",
       },
     },
   },
