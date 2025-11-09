@@ -16,8 +16,9 @@ const HeroBanner = () => {
       {/* Content */}
       <div className="container relative z-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-          <h1 className="font-playfair sm:text-5xl md:text-6xl lg:text-7xl font-bold text-offWhite mb-6 leading-tight uppercase tracking-wide animate-fade-right opacity-0 [animation-delay:200ms] text-6xl">
-            A transformação<br />
+          <h1 className="font-playfair sm:text-5xl md:text-6xl lg:text-7xl text-offWhite mb-6 leading-tight uppercase tracking-wide animate-fade-right opacity-0 [animation-delay:200ms] font-extrabold text-left text-3xl">A TRANSFORMAÇÃO
+QUE VOCÊ
+MERECE<br />
             que você<br />
             merece
           </h1>
