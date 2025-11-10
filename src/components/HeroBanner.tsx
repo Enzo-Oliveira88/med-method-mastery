@@ -14,7 +14,7 @@ const HeroBanner = () => {
         <img 
           src={heroBanner} 
           alt="Hero Banner" 
-          className="w-full h-full object-cover object-[70%_center]"
+          className="w-full h-full object-cover"
         />
       </div>
 
