@@ -57,6 +57,9 @@ export default {
         darkerBrown: "hsl(var(--darker-brown))",
         offWhite: "hsl(var(--off-white))",
         deepBlue: "hsl(var(--deep-blue))",
+        bronze: "hsl(var(--bronze))",
+        bronzeDark: "hsl(var(--bronze-dark))",
+        deepGray: "hsl(var(--deep-gray))",
       },
       borderRadius: {
         lg: "var(--radius)",
