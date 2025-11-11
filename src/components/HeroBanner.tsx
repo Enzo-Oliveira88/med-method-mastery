@@ -1,6 +1,19 @@
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 import heroBanner from "@/assets/hero-doctor.jpg";
+
 const HeroBanner = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToCourses = () => {
     document.getElementById("courses")?.scrollIntoView({
       behavior: "smooth"
@@ -8,9 +21,14 @@ const HeroBanner = () => {
   };
   return <section id="hero" className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden mt-16">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-darkerBrown/95 via-darkerBrown/80 to-transparent z-10 animate-gradient-shift" />
-        <img src={heroBanner} alt="Hero Banner" className="w-full h-full object-cover object-[70%_center]" />
+        <img 
+          src={heroBanner} 
+          alt="Hero Banner" 
+          className="w-full h-full object-cover object-[70%_center] transition-transform duration-100 ease-out"
+          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        />
       </div>
 
       {/* Content */}
