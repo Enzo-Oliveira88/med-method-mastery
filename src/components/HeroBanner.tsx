@@ -16,19 +16,19 @@ const HeroBanner = () => {
       {/* Content */}
       <div className="container relative z-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[600px] md:min-h-[700px]">
         <div className="text-center max-w-4xl">
-          <h1 className="font-playfair sm:text-8xl md:text-9xl font-normal text-foreground mb-4 leading-tight tracking-[0.2em] animate-fade-down opacity-0 [animation-delay:200ms] text-stone-50 text-9xl">
+          <h1 className="font-playfair text-7xl sm:text-8xl md:text-9xl font-normal text-offWhite mb-4 leading-tight tracking-[0.2em] animate-fade-down opacity-0 [animation-delay:200ms]">
             ANNA<br />
             FONTES
           </h1>
           
-          <p className="font-playfair text-sm sm:text-base text-foreground/80 mb-12 tracking-[0.3em] animate-fade-up opacity-0 [animation-delay:600ms]">
+          <p className="font-playfair text-sm sm:text-base text-offWhite/90 mb-12 tracking-[0.3em] animate-fade-up opacity-0 [animation-delay:600ms]">
             RESIDENTE DE CIRURGIA GERAL - CRM 000000
           </p>
           
           <div className="w-24 h-[2px] bg-accent mx-auto mb-12 animate-scale-in opacity-0 [animation-delay:800ms]" />
           
           <div className="animate-fade-up opacity-0 [animation-delay:1000ms]">
-            <Button onClick={scrollToCourses} variant="ghost" className="font-playfair text-sm tracking-[0.3em] hover:text-accent transition-colors">
+            <Button onClick={scrollToCourses} variant="ghost" className="font-playfair text-sm tracking-[0.3em] text-offWhite hover:text-accent transition-colors">
               DESCUBRA O MÉTODO
             </Button>
           </div>
